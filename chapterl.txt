@@ -1,0 +1,88 @@
+#  开源中国 iOS 客户端
+
+**源代码请切换置对应的分支，master分支中今后不再放源代码。**
+
+
+##  历史分支
+
+| 编号 | 标签名 | 发布版本 |  备注 | 说明 |  
+| ------- | ------- | ------- | ------- | ------- | 
+| 1 | [v4.1.7](https://gitee.com/oschina/iphone-app/tree/v4.1.7/) | v4.1.7 |  当前最新版 | -- |  
+| 1 | [v3.8.6](https://gitee.com/oschina/iphone-app/tree/v3.8.6/) | v3.8.6 (1709061017) |  -- | [版本说明](https://www.oschina.net/news/88474/oschina-ios-app-v386-release) |  
+| 2 | [v3.8.4](https://gitee.com/oschina/iphone-app/tree/v3.8.4/) | v3.8.4 (17006060922) |  -- | [版本说明](https://www.oschina.net/news/85579/oschina-ios-app-v384-release) |  
+| 3 | [v3.8.3](https://gitee.com/oschina/iphone-app/tree/v3.8.3/) | v3.8.3 (1705091752) | -- | [版本说明](https://www.oschina.net/news/84711/oschina-ios-app-v383-release) |
+| 4 | [v3.8.0](https://gitee.com/oschina/iphone-app/tree/v3.8.0/) | v3.8.0 (1703311127) | -- | [版本说明](https://www.oschina.net/news/83625/oschina-ios-app-v380-release) | 
+| 5 | [v3.7.8](https://gitee.com/oschina/iphone-app/tree/v3.7.8/) | v3.7.8 (1701231505) | -- | [版本说明](https://www.oschina.net/news/81306/oschina-ios-app-v378-release) |  
+| 6 | [v3.7.7](https://gitee.com/oschina/iphone-app/tree/v3.7.7/) | v3.7.7 (1612211512) | -- | [版本说明](https://www.oschina.net/news/80264) |  
+| 7 | [v3.7.6](https://gitee.com/oschina/iphone-app/tree/v3.7.6/) | v3.7.6 (1611281903) | -- | [版本说明](https://www.oschina.net/news/79550/oschina-ios-app-v376-release) |  
+| 8 | [v3.7.4](https://gitee.com/oschina/iphone-app/tree/v3.7.4/) | v3.7.4 (1609261855) | -- | [版本说明](https://www.oschina.net/news/77606/oschina-ios-client-v374-release) |  
+| 9 | [v3.7.3](https://gitee.com/oschina/iphone-app/tree/v3.7.3/) | v3.7.3 (1608191845) | -- | [版本说明](https://www.oschina.net/news/76425/oschina-ios-client-v373-release) |  
+| 10 | [v3.7.2](https://gitee.com/oschina/iphone-app/tree/v3.7.2/) | v3.7.2 (1608101524) | -- | [版本说明](https://www.oschina.net/news/76073/oschina-ios-client-v372-release) |  
+| 11 | [v3.7.1](https://gitee.com/oschina/iphone-app/tree/v3.7.1/) | v3.7.1 (1607111810) | -- | [版本说明](https://www.oschina.net/news/75201/oschina-ios-client-v371-release) |
+| 12 | [v3.7.0](https://gitee.com/oschina/iphone-app/tree/v3.7.0/) | v3.7.0 (1606131024) | -- |--|  
+
+
+##  编译环境
+Xcode 7＋
+
+
+##  运行项目
+1. 安装CocoaPods (关于CocoaPods的安装和使用，可参考[这个教程](http://code4app.com/article/cocoapods-install-usage))
+2. 在终端下打开项目所在的目录，执行```pod install``` (若是首次使用CocoaPods，需先执行```pod setup```)
+3. ```pod install```命令执行成功后，通过新生成的xcworkspace文件打开工程运行项目
+
+
+##  目录简介
+
+* Application：  存放AppDelegate和API定义
+* Models：       数据实体类
+* Controllers：  存放所有的view controller
+* Views：        存放一些定制的视图
+* Utils：        存放工具类
+* Categories：   类扩展
+* Resources：    存放除图片以外的资源文件，如html、css文件（图片资源存放在images.xcassets中)
+
+
+## 项目用到的开源类库、组件
+
+* AFNetworking：                         网络请求
+* AFOnoSerializer：                      序列化XML和HTML
+* DateTools：                            时间计算
+* DTCoreText：                           渲染HTML
+* GRMustache：                           html模版引擎
+* GPUImage：                             图像处理
+* MBProgressHUD：                        显示提示或加载进度
+* MJRefresh：                            刷新控件
+* Ono：                                  解析XML
+* ReactiveCocoa：                        函数式编程和响应式编程框架
+* RESideMenu：                           侧拉栏
+* SDWebImage：                           加载网络图片和缓存图片
+* SSKeychain：                           账号密码的存取
+* TBXML：                                解析XML
+* TOWebViewController：                  内置浏览器
+* TTTAttributedLabel：                   支持富文本显示的label
+
+
+##  开源协议
+
+	The MIT License (MIT)
+
+	Copyright (c) 2018 OSChina.net
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
